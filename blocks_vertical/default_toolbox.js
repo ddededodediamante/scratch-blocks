@@ -42,16 +42,6 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '</shadow>' +
       '</value>' +
     '</block>' +
-    '<block type="motion_movebacksteps" id="motion_movebacksteps">' +
-    '  <value name="STEPS">' +
-    '    <shadow type="math_number" />' +
-    '  </value>' +
-    '</block>' +
-    '<block type="motion_moveupdownsteps" id="motion_moveupdownsteps">' +
-    '  <value name="STEPS">' +
-    '    <shadow type="math_number" />' +
-    '  </value>' +
-    '</block>' +
     '<block type="motion_turnright" id="motion_turnright">' +
       '<value name="DEGREES">' +
         '<shadow type="math_number">' +
@@ -66,33 +56,6 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '</shadow>' +
       '</value>' +
     '</block>' +
-    '<block type="motion_turnrightaroundxy" id="motion_turnrightaroundxy">' +
-      '<value name="DEGREES">' +
-        '<shadow type="math_number">' +
-          '<field name="NUM">15</field>' +
-        '</shadow>' +
-      '</value>' +
-      '<value name="X">' +
-        '<shadow type="math_number" />' +
-      '</value>' +
-      '<value name="Y">' +
-        '<shadow type="math_number" />' +
-      '</value>' +
-    '</block>' +
-    '<block type="motion_turnleftaroundxy" id="motion_turnleftaroundxy">' +
-      '<value name="DEGREES">' +
-        '<shadow type="math_number">' +
-          '<field name="NUM">15</field>' +
-        '</shadow>' +
-      '</value>' +
-      '<value name="X">' +
-        '<shadow type="math_number" />' +
-      '</value>' +
-      '<value name="Y">' +
-        '<shadow type="math_number" />' +
-      '</value>' +
-    '</block>' +
-    '<block type="motion_turnaround" />' +
     '<block type="motion_pointindirection" id="motion_pointindirection">' +
       '<value name="DIRECTION">' +
         '<shadow type="math_angle">' +
@@ -106,19 +69,6 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '</shadow>' +
       '</value>' +
     '</block>' +
-    '<block type="motion_pointtowardsxy" id="motion_pointtowards_xy">' +
-      '<value name="X">' +
-        '<shadow type="math_number">' +
-          '<field name="NUM">0</field>' +
-        '</shadow>' +
-      '</value>' +
-      '<value name="Y">' +
-        '<shadow type="math_number">' +
-          '<field name="NUM">0</field>' +
-        '</shadow>' +
-      '</value>' +
-    '</block>' +
-    '<block type="motion_pointinrandomdirection" />' +
     '<block type="motion_gotoxy" id="motion_gotoxy">' +
       '<value name="X">' +
         '<shadow id="movex" type="math_number">' +
@@ -165,14 +115,6 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '</shadow>' +
       '</value>' +
     '</block>' +
-    '<block type="motion_glidedirectionstepsinseconds">' +
-    '  <value name="STEPS">' +
-    '    <shadow type="math_number" />' +
-    '  </value>' +
-    '  <value name="SECS">' +
-    '    <shadow type="math_number" />' +
-    '  </value>' +
-    '</block>' +
     '<block type="motion_changexby" id="motion_changexby">' +
       '<value name="DX">' +
         '<shadow type="math_number">' +
@@ -201,6 +143,22 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '</shadow>' +
       '</value>' +
     '</block>' +
+    '<block type="motion_ifonedgebounce" id="motion_ifonedgebounce" />' +
+    '<block type="motion_setrotationstyle" id="motion_setrotationstyle" />' +
+    '<block type="motion_xposition" id="motion_xposition" />' +
+    '<block type="motion_yposition" id="motion_yposition" />' +
+    '<block type="motion_direction" id="motion_direction" />' +
+    '<block type="motion_movebacksteps" id="motion_movebacksteps">' +
+    '  <value name="STEPS">' +
+    '    <shadow type="math_number" />' +
+    '  </value>' +
+    '</block>' +
+    '<block type="motion_moveupdownsteps" id="motion_moveupdownsteps">' +
+    '  <value name="STEPS">' +
+    '    <shadow type="math_number" />' +
+    '  </value>' +
+    '</block>' +
+    '<block type="motion_move_sprite_to_scene_side" id="motion_move_sprite_to_scene_side" />' +
     '<block type="motion_changebyxy" id="motion_changeyby">' +
       '<value name="DX">' +
         '<shadow type="math_number">' +
@@ -213,8 +171,54 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '</shadow>' +
       '</value>' +
     '</block>' +
-    '<block type="motion_move_sprite_to_scene_side" id="motion_move_sprite_to_scene_side"></block>' +
-    '<block type="motion_ifonedgebounce" id="motion_ifonedgebounce"></block>' +
+    '<block type="motion_glidedirectionstepsinseconds">' +
+    '  <value name="STEPS">' +
+    '    <shadow type="math_number" />' +
+    '  </value>' +
+    '  <value name="SECS">' +
+    '    <shadow type="math_number" />' +
+    '  </value>' +
+    '</block>' +
+    '<block type="motion_turnrightaroundxy" id="motion_turnrightaroundxy">' +
+      '<value name="DEGREES">' +
+        '<shadow type="math_number">' +
+          '<field name="NUM">15</field>' +
+        '</shadow>' +
+      '</value>' +
+      '<value name="X">' +
+        '<shadow type="math_number" />' +
+      '</value>' +
+      '<value name="Y">' +
+        '<shadow type="math_number" />' +
+      '</value>' +
+    '</block>' +
+    '<block type="motion_turnleftaroundxy" id="motion_turnleftaroundxy">' +
+      '<value name="DEGREES">' +
+        '<shadow type="math_number">' +
+          '<field name="NUM">15</field>' +
+        '</shadow>' +
+      '</value>' +
+      '<value name="X">' +
+        '<shadow type="math_number" />' +
+      '</value>' +
+      '<value name="Y">' +
+        '<shadow type="math_number" />' +
+      '</value>' +
+    '</block>' +
+    '<block type="motion_turnaround" />' +
+    '<block type="motion_pointtowardsxy" id="motion_pointtowards_xy">' +
+      '<value name="X">' +
+        '<shadow type="math_number">' +
+          '<field name="NUM">0</field>' +
+        '</shadow>' +
+      '</value>' +
+      '<value name="Y">' +
+        '<shadow type="math_number">' +
+          '<field name="NUM">0</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+    '<block type="motion_pointinrandomdirection" />' +
     '<block type="motion_ifonspritebounce" id="motion_ifonspritebounce">' +
       '<value name="SPRITE">' +
         '<shadow type="motion_ifonspritebounce_menu">' +
@@ -233,10 +237,6 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '</shadow>' +
       '</value>' +
     '</block>' +
-    '<block type="motion_setrotationstyle" id="motion_setrotationstyle"></block>' +
-    '<block type="motion_xposition" id="motion_xposition"></block>' +
-    '<block type="motion_yposition" id="motion_yposition"></block>' +
-    '<block type="motion_direction" id="motion_direction"></block>' +
   '</category>' +
   '<category name="%{BKY_CATEGORY_LOOKS}" id="looks" colour="#9966FF" secondaryColour="#774DCB">' +
     '<block type="looks_show" id="looks_show"></block>' +
@@ -311,9 +311,10 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
         '</shadow>' +
       '</value>' +
     '</block>' +
-    '<block type="looks_costumenumbername" id="looks_costumenumbername"></block>' +
-    '<block type="looks_backdropnumbername" id="looks_backdropnumbername"></block>' +
-    '<block type="looks_size" id="looks_size"></block>' +
+    '<block type="looks_costumenumbername" id="looks_costumenumbername" />' +
+    '<block type="looks_backdropnumbername" id="looks_backdropnumbername" />' +
+    '<block type="looks_size" id="looks_size" />' +
+    '<block type="looks_getEffectValue" />' +
     '<block type="looks_stoptalking" />' +
     '<block type="looks_setStretch">' +
       '<value name="X">' +
@@ -341,6 +342,8 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
     '</block>' +
     '<block type="looks_stretchGetX" />' +
     '<block type="looks_stretchGetY" />' +
+    '<block type="looks_sayWidth" />' +
+    '<block type="looks_sayHeight" />' +
     '<block type="looks_setTintColor">' +
     '  <value name="color">' +
     '    <shadow type="colour_picker" />' +
@@ -349,6 +352,7 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
     '<block type="looks_tintColor" />' +
     '<block type="looks_previouscostume" />' +
     '<block type="looks_previousbackdrop" />' +
+    '<block type="looks_getSpriteVisible" />' +
     '<block type="looks_getOtherSpriteVisible">' +
     '  <value name="VISIBLE_OPTION">' +
     '    <shadow type="looks_getOtherSpriteVisible_menu">' +
